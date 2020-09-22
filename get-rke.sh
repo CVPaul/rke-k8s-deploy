@@ -1,7 +1,7 @@
 ##########################################################################
 # File Name: rke-download.sh
-# Author: amoscykl
-# mail: amoscykl980629@163.com
+# Author: xianqiu_li
+# mail: xianqiu_li@163.com
 # Created Time: Wed 16 Sep 2020 03:53:37 PM CST
 #########################################################################
 #!/bin/zsh

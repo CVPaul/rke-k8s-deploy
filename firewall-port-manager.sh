@@ -1,7 +1,7 @@
 ##########################################################################
 # File Name: firewall-port-manager.sh
-# Author: amoscykl
-# mail: amoscykl980629@163.com
+# Author: xianqiu_li
+# mail: xianqiu_li@163.com
 # Created Time: Thu 17 Sep 2020 10:41:54 AM CST
 #########################################################################
 #!/bin/zsh

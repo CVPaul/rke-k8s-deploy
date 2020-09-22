@@ -1,7 +1,7 @@
 ##########################################################################
 # File Name: set-hostname.sh
-# Author: amoscykl
-# mail: amoscykl980629@163.com
+# Author: xianqiu_li
+# mail: xianqiu_li@163.com
 # Created Time: Mon 21 Sep 2020 01:36:36 PM CST
 #########################################################################
 #!/bin/zsh

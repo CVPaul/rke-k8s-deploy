@@ -1,7 +1,7 @@
 ##########################################################################
 # File Name: install-kubectl.sh
-# Author: amoscykl
-# mail: amoscykl980629@163.com
+# Author: xianqiu_li
+# mail: xianqiu_li@163.com
 # Created Time: Tue 22 Sep 2020 11:10:43 AM CST
 #########################################################################
 #!/bin/zsh
