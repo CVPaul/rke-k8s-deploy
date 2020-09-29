@@ -1,0 +1,105 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "cattle.io/status": "{\"Conditions\":[{\"Type\":\"ResourceQuotaInit\",\"Status\":\"True\",\"Message\":\"\",\"LastUpdateTime\":\"2020-09-22T08:02:34Z\"},{\"Type\":\"InitialRolesPopulated\",\"Status\":\"True\",\"Message\":\"\",\"LastUpdateTime\":\"2020-09-22T08:02:39Z\"}]}",
+            "field.cattle.io/projectId": "local:p-hvgk2",
+            "lifecycle.cattle.io/create.namespace-auth": "true"
+        },
+        "creationTimestamp": "2020-09-22T08:02:12Z",
+        "deletionTimestamp": "2020-09-28T08:36:30Z",
+        "finalizers": [
+            "controller.cattle.io/namespace-auth"
+        ],
+        "labels": {
+            "cattle.io/creator": "norman",
+            "field.cattle.io/projectId": "p-hvgk2"
+        },
+        "managedFields": [
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:metadata": {
+                        "f:annotations": {
+                            ".": {},
+                            "f:cattle.io/status": {},
+                            "f:field.cattle.io/projectId": {},
+                            "f:lifecycle.cattle.io/create.namespace-auth": {}
+                        },
+                        "f:finalizers": {
+                            ".": {},
+                            "v:\"controller.cattle.io/namespace-auth\"": {}
+                        },
+                        "f:labels": {
+                            ".": {},
+                            "f:cattle.io/creator": {},
+                            "f:field.cattle.io/projectId": {}
+                        }
+                    }
+                },
+                "manager": "Go-http-client",
+                "operation": "Update",
+                "time": "2020-09-22T08:02:38Z"
+            },
+            {
+                "apiVersion": "v1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                    "f:status": {
+                        "f:phase": {}
+                    }
+                },
+                "manager": "kube-controller-manager",
+                "operation": "Update",
+                "time": "2020-09-28T08:36:41Z"
+            }
+        ],
+        "name": "cattle-global-nt",
+        "resourceVersion": "2270612",
+        "selfLink": "/api/v1/namespaces/cattle-global-nt",
+        "uid": "e04c6ed2-5c90-414c-8cff-b601555cfb4c"
+    },
+    "spec": {},
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2020-09-28T08:36:41Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2020-09-28T08:36:41Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2020-09-28T08:36:41Z",
+                "message": "All content successfully deleted, may be waiting on finalization",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2020-09-28T08:36:41Z",
+                "message": "All content successfully removed",
+                "reason": "ContentRemoved",
+                "status": "False",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2020-09-28T08:36:41Z",
+                "message": "All content-preserving finalizers finished",
+                "reason": "ContentHasNoFinalizers",
+                "status": "False",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
