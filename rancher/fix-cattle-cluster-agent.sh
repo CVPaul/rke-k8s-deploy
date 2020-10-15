@@ -15,7 +15,7 @@ kubectl -n cattle-system patch  deployments cattle-cluster-agent --patch '{
                         [
                             "rancher.shengtang.ai"
                         ],
-                        "ip": "192.168.1.106"
+                        "ip": "192.168.1.100"
                     }
                 ]
             }

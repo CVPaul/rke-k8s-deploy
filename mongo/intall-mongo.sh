@@ -12,6 +12,6 @@ helm repo update
 helm install mongo bitnami/mongodb \
 	--namespace database \
 	--set architecture=replicaset \
-	--set clusterDomain=database.shengtamg.ai
+	--set clusterDomain=database.shengtang.ai
 # Read more about the installation in the Bitnami MongoDB Stack Chart Github repository
 # https://github.com/bitnami/charts/tree/master/bitnami/mongodb/#installing-the-chart
