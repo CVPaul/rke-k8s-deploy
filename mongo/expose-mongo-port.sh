@@ -7,14 +7,10 @@
 #!/bin/zsh
 # 对于通过rancher安装的mongo-replcaset而言，需要手动暴露端口：https://zhuanlan.zhihu.com/p/265108417
 # 暴露端口
-# kubectl expose pod/mongo-mongodb-replicaset-0 -n mongo --type="NodePort" --port 27017
-# kubectl expose pod/mongo-mongodb-replicaset-1 -n mongo --type="NodePort" --port 27017
-# kubectl expose pod/mongo-mongodb-replicaset-2 -n mongo --type="NodePort" --port 27017
-# 获取端口并产生访问命令
-
-#kubectl get svc -n mongo|grep NodePort|awk '{print $0}'
-#describes=`kubectl get svc -n mongo|grep NodePort|awk '{print $0}'`
-#echo ${describes[0]}
+#kubectl expose pod/mongo-mongodb-0 -n mongo --type="NodePort" --port 27017
+#kubectl expose pod/mongo-mongodb-1 -n mongo --type="NodePort" --port 27017
+#kubectl expose pod/mongo-mongodb-2 -n mongo --type="NodePort" --port 27017
+## 获取端口并产生访问命令
 mongo_address="mongodb://<username>:<passwd>@"
 for line in `kubectl get svc -n mongo|grep NodePort|sed 's/ \+/;/g'`;do
     tokens=(`echo $line|sed 's/;/ /g'`)

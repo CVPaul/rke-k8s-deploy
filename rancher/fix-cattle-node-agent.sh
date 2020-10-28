@@ -13,7 +13,8 @@ kubectl -n cattle-system patch  daemonsets cattle-node-agent --patch '{
                  {
                      "hostnames":
                         [
-                            "rancher.shengtang.ai"
+                            "rancher.shengtang.ai",
+							"rancher.cluster.st"
                         ],
                         "ip": "192.168.1.100"
                  }

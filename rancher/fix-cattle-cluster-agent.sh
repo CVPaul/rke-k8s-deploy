@@ -5,7 +5,7 @@
 # Created Time: Tue 22 Sep 2020 03:56:07 PM CST
 #########################################################################
 #!/bin/zsh
-kubectl -n cattle-system patch  deployments cattle-cluster-agent --patch '{
+kubectl -n cattle-system patch deployments cattle-cluster-agent --patch '{
     "spec": {
         "template": {
             "spec": {
@@ -13,7 +13,8 @@ kubectl -n cattle-system patch  deployments cattle-cluster-agent --patch '{
                     {
                         "hostnames":
                         [
-                            "rancher.shengtang.ai"
+                            "rancher.shengtang.ai",
+							"rancher.cluster.st"
                         ],
                         "ip": "192.168.1.100"
                     }
